@@ -1,0 +1,59 @@
+body {
+  background-color: lightgrey;
+}
+
+#title {
+  margin: 10px;
+  text-align: center;
+}
+
+#topAnimeList {
+  width: fit-content;
+}
+
+#body {
+  margin-top: 20px;
+}
+
+#animeListDiv {
+  display: flex;
+  margin-top: 15px;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#animeCardTitle {
+  font-size: 15px;
+  text-align: center;
+  max-width: 100px;
+}
+
+#titleDiv,
+#searchDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#searchInput {
+  width: fit-content;
+}
+
+.synopsisButtons {
+  margin-left: 5px;
+}
+
+#modalFooterDiv {
+  justify-content: space-evenly;
+}
+
+#modalFooter {
+  display: flex;
+}
+
+.modalFooterDetails {
+  padding: 10px;
+}
