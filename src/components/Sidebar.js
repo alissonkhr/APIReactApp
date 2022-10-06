@@ -11,7 +11,7 @@ function Sidebar() {
     const temp = await fetch(
       `https://api.jikan.moe/v4/top/anime?&filter=bypopularity`
     ).then((res) => res.json());
-    setTopAnime(temp.data.slice(0, 5));
+    setTopAnime(temp.data.slice(0, 6));
   };
 
   useEffect(() => {
@@ -32,12 +32,15 @@ function Sidebar() {
   ));
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand>Popular Anime</Navbar.Brand>
-          <Nav className="me-auto">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto navList">
             {popularAnime}
           </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

@@ -1,5 +1,14 @@
 body {
   background-color: grey;
+  font-family: "Nunito", sans-serif;
+  background: transparent;
+}
+
+html,
+footer {
+  background-image: url("https://browsecat.net/sites/default/files/black-gradient-background-127014-1527985-2500025.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #title {
@@ -9,14 +18,26 @@ body {
 
 #topAnimeList {
   width: fit-content;
-  padding: 10px;
+  padding: 9px;
 }
 
-#topAnimeList:hover {
-  color: lightblue;
+#topAnimeList:link,
+.animeCardATag:link {
+  color: grey;
+  text-decoration: none;
 }
 
+#topAnimeList:visited,
+.animeCardATag:visited {
+  color: grey;
+  text-decoration: none;
+}
 
+#topAnimeList:hover,
+.animeCardATag:hover {
+  color: lightgrey;
+  text-decoration: none;
+}
 
 #body {
   margin-top: 20px;
@@ -24,7 +45,7 @@ body {
 
 #animeListDiv {
   display: flex;
-  margin-top: 15px;
+  margin-top: 30px;
   flex-flow: wrap;
   justify-content: space-evenly;
 }
@@ -65,3 +86,14 @@ ul {
   padding: 10px;
 }
 
+nav {
+  margin-bottom: 30px;
+}
+
+input {
+  text-align: center;
+}
+
+.navList {
+  text-align: center;
+}

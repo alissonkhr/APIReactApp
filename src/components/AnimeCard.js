@@ -5,7 +5,7 @@ function AnimeCard({ anime }) {
   return (
     <ul id="animeCardList">
       <li id="animeCardItem">
-        <a href={anime.url} target="_blank" rel="noopener noreferrer">
+        <a href={anime.url} target="_blank" rel="noopener noreferrer" className="animeCardATag">
           <figure>
             <img
               src={anime.images.jpg.image_url}

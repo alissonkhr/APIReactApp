@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
   return (
     <header>
-      <h1 id="title">AnimAPI</h1>
+      <h1 id="title" className="text-white">AnimAPI</h1>
     </header>
   );
 }

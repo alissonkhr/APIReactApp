@@ -15,7 +15,7 @@ function AnimeDetails({ anime }) {
   return (
     <>
       <div className="d-flex align-items-center justify-content-center">
-        <Button onClick={handleShow}>Details</Button>
+        <Button variant="secondary" onClick={handleShow}>Details</Button>
       </div>
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
