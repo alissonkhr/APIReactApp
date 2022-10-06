@@ -4,8 +4,7 @@ body {
   background: transparent;
 }
 
-html,
-footer {
+html, footer {
   background-image: url("https://browsecat.net/sites/default/files/black-gradient-background-127014-1527985-2500025.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,6 +13,7 @@ footer {
 #title {
   margin: 20px;
   text-align: center;
+  padding-top: 15px;
 }
 
 #topAnimeList {
@@ -121,6 +121,9 @@ input {
 
 .alert {
   margin: 20px;
+  background-image: url("https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpghttps://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #smallAlertMsg {
@@ -129,4 +132,19 @@ input {
 
 .aboutButton {
   margin-bottom: 20px;
+}
+
+.shibaDiv {
+  height: 100px;
+  width: 100px;
+}
+
+.shibaImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.sourceLink {
+  margin-left: 5px;
 }

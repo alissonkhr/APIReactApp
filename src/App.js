@@ -3,6 +3,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
 
 function App() {
   const [animeList, setAnimeList] = useState([]);
@@ -34,6 +35,9 @@ function App() {
             setSearch={setSearch}
             animeList={animeList}
           />
+        </div>
+        <div id="footer">
+          <Footer />
         </div>
       </div>
     </div>
