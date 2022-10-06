@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <Alert show={show} variant="secondary" className="alert">
-        <Alert.Heading>Welcome to AnimAPI ✨</Alert.Heading>
+        <Alert.Heading>Welcome to AnimAPI ッ</Alert.Heading>
         <p>
           Above, you will see some of the top anime out there and can click on
           the titles to get some more details about them from{" "}
@@ -36,10 +36,10 @@ function About() {
               Jikan
             </a>{" "}
             for providing the information brought to you by{" "}
-            <span className="mal">My Anime List</span> for this site 💟
+            <span className="mal">My Anime List</span> for this site ᵔᴥᵔ
           </small>
-          <Button onClick={() => setShow(false)} variant="secondary">
-            🤍
+          <Button className="aboutCloseBtn" variant="outline-dark" onClick={() => setShow(false)}>
+          <i class="bi bi-x-circle-fill"></i>
           </Button>
         </div>
       </Alert>

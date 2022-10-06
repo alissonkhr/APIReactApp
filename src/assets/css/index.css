@@ -24,7 +24,7 @@ footer, .nav, .modal-content {
 #title {
   margin: 20px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
 #topAnimeList {
@@ -48,19 +48,19 @@ footer, .nav, .modal-content {
 }
 
 #topAnimeList:link,
-.animeCardATag:link {
+.animeCardATag:link, .modalLink:link  {
   color: slategray;
   text-decoration: none;
 }
 
 #topAnimeList:visited,
-.animeCardATag:visited {
+.animeCardATag:visited, .modalLink:visited {
   color: slategray;
   text-decoration: none;
 }
 
 #topAnimeList:hover,
-.animeCardATag:hover {
+.animeCardATag:hover, .modalLink:hover  {
   color: darkgrey;
   text-decoration: none;
 }

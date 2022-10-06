@@ -37,22 +37,22 @@ function AnimeDetails({ anime }) {
         <Modal.Body>
           <p className={theClass}>{anime.synopsis}</p>
           <div className="modalBtns">
-          <Button
-            variant="outline-dark"
-            className="synopsisButtons"
-            onClick={handleMore}
-          >
-            More?
-          </Button>
-          {!button && (
             <Button
               variant="outline-dark"
               className="synopsisButtons"
-              onClick={handleLess}
+              onClick={handleMore}
             >
-              Less
+              More?
             </Button>
-          )}
+            {!button && (
+              <Button
+                variant="outline-dark"
+                className="synopsisButtons"
+                onClick={handleLess}
+              >
+                Less
+              </Button>
+            )}
           </div>
         </Modal.Body>
         <Modal.Footer id="modalFooterDiv">
@@ -60,6 +60,11 @@ function AnimeDetails({ anime }) {
             <p className="modalFooterDetails">Rating: {anime.score}</p>
             <p className="modalFooterDetails">Episodes: {anime.episodes}</p>
             <p className="modalFooterDetails">{anime.rating}</p>
+            <p className="modalFooterDetails">
+              <a href={anime.url} target="_blank" className="modalLink" rel="noopener noreferrer">
+              <i className="bi bi-box-arrow-down-right"></i>
+              </a>
+            </p>
           </div>
         </Modal.Footer>
       </Modal>
