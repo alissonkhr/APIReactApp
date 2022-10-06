@@ -15,7 +15,7 @@ function MainContent(props) {
             placeholder="Search for an anime"
             required
             value={props.search}
-            onChange={(e) => props.SetSearch(e.target.value)}
+            onChange={(e) => props.setSearch(e.target.value)}
             className="form-control"
             id="searchInput"
           />

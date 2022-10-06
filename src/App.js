@@ -5,8 +5,8 @@ import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
 
 function App() {
-  const [animeList, SetAnimeList] = useState([]);
-  const [search, SetSearch] = useState("");
+  const [animeList, setAnimeList] = useState([]);
+  const [search, setSearch] = useState("");
 
 
   const handleSearch = (e) => {
@@ -18,7 +18,7 @@ function App() {
     const temp = await fetch(
       `https://api.jikan.moe/v4/anime?q=${query}&limit=10&sort=asc`
     ).then((res) => res.json());
-    SetAnimeList(temp.data);
+    setAnimeList(temp.data);
   };
 
 
@@ -33,7 +33,7 @@ function App() {
           <MainContent
             handleSearch={handleSearch}
             search={search}
-            SetSearch={SetSearch}
+            setSearch={setSearch}
             animeList={animeList}
           />
         </div>
