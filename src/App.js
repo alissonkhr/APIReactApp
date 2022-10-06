@@ -22,23 +22,25 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Header />
-      <div id="body">
-        <div className="content-wrap" id="sidebar">
-          <Sidebar />
+    <div>
+      <div className="content-container">
+        <Header />
+        <div id="body">
+          <div className="content-wrap" id="sidebar">
+            <Sidebar />
+          </div>
+          <div id="main">
+            <MainContent
+              handleSearch={handleSearch}
+              search={search}
+              setSearch={setSearch}
+              animeList={animeList}
+            />
+          </div>
         </div>
-        <div id="main">
-          <MainContent
-            handleSearch={handleSearch}
-            search={search}
-            setSearch={setSearch}
-            animeList={animeList}
-          />
-        </div>
-        <div id="footer">
-          <Footer />
-        </div>
+      </div>
+      <div id="footer">
+        <Footer />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <div id="headerDiv" className="d-flex justify-content-center">
-        <h1 id="title" className="text-white">
+        <h1 id="title">
           AnimAPI
         </h1>
         <div className="shibaDiv">

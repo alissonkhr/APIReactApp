@@ -32,7 +32,7 @@ function Sidebar() {
   ));
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar bg="light" variant="light" expand="lg" className="nav">
         <Container>
           <Navbar.Brand>Popular Anime</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

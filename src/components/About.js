@@ -36,17 +36,17 @@ function About() {
               Jikan
             </a>{" "}
             for providing the information brought to you by{" "}
-            <span className="mal">My Anime List</span> for this site 🖤
+            <span className="mal">My Anime List</span> for this site 💟
           </small>
-          <Button onClick={() => setShow(false)} variant="dark">
+          <Button onClick={() => setShow(false)} variant="secondary">
             🤍
           </Button>
         </div>
       </Alert>
 
       {!show && (
-        <div className="d-flex justify-content-center aboutButton">
-          <Button variant="secondary" onClick={() => setShow(true)}>
+        <div className="d-flex justify-content-center aboutBtnDiv">
+          <Button className="aboutBtn text-dark" variant="secondary" onClick={() => setShow(true)}>
             About AnimAPI!
           </Button>
         </div>

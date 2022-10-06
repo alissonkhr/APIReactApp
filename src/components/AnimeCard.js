@@ -1,32 +1,34 @@
 import React from "react";
 import AnimeDetails from "./AnimeDetails";
+import Card from "react-bootstrap/Card";
 
 function AnimeCard({ anime }) {
   return (
-    <ul id="animeCardList">
-      <li id="animeCardItem">
-        <a
-          href={anime.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="animeCardATag"
-        >
-          <figure>
-            <img
+    <>
+    <Card className="card">
+      <ul id="animeCardList">
+        <li id="animeCardItem">
+          <a
+            href={anime.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="animeCardATag"
+          >
+            <Card.Img
               src={anime.images.jpg.image_url}
               alt="Anime Art"
-              className="img-thumbnail img-fluid"
+              className="img-thumbnail img-fluid animeCardImg"
             />
-          </figure>
-          <div id="titleDiv">
-            <h3 id="animeCardTitle">{anime.title_english || anime.title}</h3>
+            </a>
+            <Card.Body>
+          <div>
+            <AnimeDetails anime={anime} />
           </div>
-        </a>
-        <div>
-          <AnimeDetails anime={anime} />
-        </div>
-      </li>
-    </ul>
+          </Card.Body>
+        </li>
+      </ul>
+      </Card>
+    </>
   );
 }
 

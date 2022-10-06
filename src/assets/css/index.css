@@ -4,10 +4,21 @@ body {
   background: transparent;
 }
 
-html, footer {
-  background-image: url("https://browsecat.net/sites/default/files/black-gradient-background-127014-1527985-2500025.png");
+html,
+footer, .nav, .modal-content {
+  background-image: url("data:image/jpeg;base64,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");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.content-container {
+  min-height: calc(100vh - 130px);
+}
+
+.footer--pin {
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
 
 #title {
@@ -22,12 +33,12 @@ html, footer {
 }
 
 #aboutLink:link {
-  color: rgb(106, 171, 65);
+  color: rgb(207, 91, 174);
   text-decoration: none;
 }
 
 #aboutLink:visited {
-  color: rgb(106, 171, 65);
+  color: rgb(207, 91, 174);
   text-decoration: none;
 }
 
@@ -38,19 +49,19 @@ html, footer {
 
 #topAnimeList:link,
 .animeCardATag:link {
-  color: grey;
+  color: slategray;
   text-decoration: none;
 }
 
 #topAnimeList:visited,
 .animeCardATag:visited {
-  color: grey;
+  color: slategray;
   text-decoration: none;
 }
 
 #topAnimeList:hover,
 .animeCardATag:hover {
-  color: lightgrey;
+  color: darkgrey;
   text-decoration: none;
 }
 
@@ -90,6 +101,10 @@ ul {
   margin-left: 5px;
 }
 
+.card {
+  margin: 10px;
+}
+
 #modalFooterDiv {
   justify-content: space-evenly;
 }
@@ -114,14 +129,26 @@ input {
   text-align: center;
 }
 
-.mal {
-  text-shadow: 1px 1px 2px rgb(42, 177, 192), 0 0 1em rgb(106, 171, 65),
-    0 0 0.2em rgba(41, 245, 9, 0.686);
+li {
+  padding-left: 8px;
+  padding-top: 8px;
 }
 
-.alert {
+.mal {
+  text-shadow: 1px 1px 2px rgb(192, 42, 122), 0 0 1em rgb(223, 26, 167),
+    0 0 0.2em rgba(119, 9, 245, 0.686);
+}
+
+.alert, .card {
   margin: 20px;
-  background-image: url("https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpghttps://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg");
+  background-image: url("https://wallpaperaccess.com/full/5103115.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#animeDetailsBtn, .aboutBtn, .submitBtn {
+  width: 124px;
+  background-image: url("data:image/jpeg;base64,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");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -130,13 +157,13 @@ input {
   margin-right: 10px;
 }
 
-.aboutButton {
+.aboutBtnDiv {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .shibaDiv {
-  height: 100px;
-  width: 100px;
+  width: 75px;
 }
 
 .shibaImg {
@@ -147,4 +174,23 @@ input {
 
 .sourceLink {
   margin-left: 5px;
+}
+
+.animeCardImg {
+  height: 200px;
+  width: 150px;
+  object-fit:cover;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  margin-right: 10px;
+}
+
+.modalBtns {
+  display: flex;
+  justify-content: center;
 }

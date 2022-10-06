@@ -23,6 +23,7 @@ function MainContent(props) {
             className="form-control"
             id="searchInput"
           />
+            <input className="btn btn-outline-dark submitBtn" type="submit" value="Go!" />
         </form>
       </div>
       <div id="animeListDiv">{animeSearched}</div>

@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 function AnimeDetails({ anime }) {
-  const [showModal, setShow] = useState(false);
+  const [show, setShow] = useState(false);
+  const [theClass, setClass] = useState("fs-6 text-truncate");
+  const [button, setButton] = useState(true);
 
-  const [synopsisClass, setButton] = useState("fs-6 text-truncate");
-
-  const handleLess = () => setButton("fs-6 text-truncate");
-  const handleMore = () => setButton("fs-6");
+  const handleLess = () => {
+    setClass("fs-6 text-truncate");
+    setButton(true);
+  };
+  const handleMore = () => {
+    setClass("fs-6");
+    setButton(false);
+  };
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -15,16 +21,22 @@ function AnimeDetails({ anime }) {
   return (
     <>
       <div className="d-flex align-items-center justify-content-center">
-        <Button variant="secondary" onClick={handleShow}>
-          Details
+        <Button
+          id="animeDetailsBtn"
+          variant="secondary"
+          className="btn btn-outline-dark"
+          onClick={handleShow}
+        >
+          {anime.title}
         </Button>
       </div>
-      <Modal show={showModal} onHide={handleClose}>
+      <Modal className="modal" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>About {anime.title}</Modal.Title>
+          <Modal.Title className="text-center">About {anime.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p className={synopsisClass}>{anime.synopsis}</p>
+          <p className={theClass}>{anime.synopsis}</p>
+          <div className="modalBtns">
           <Button
             variant="outline-dark"
             className="synopsisButtons"
@@ -32,13 +44,16 @@ function AnimeDetails({ anime }) {
           >
             More?
           </Button>
-          <Button
-            variant="outline-dark"
-            className="synopsisButtons"
-            onClick={handleLess}
-          >
-            Less
-          </Button>
+          {!button && (
+            <Button
+              variant="outline-dark"
+              className="synopsisButtons"
+              onClick={handleLess}
+            >
+              Less
+            </Button>
+          )}
+          </div>
         </Modal.Body>
         <Modal.Footer id="modalFooterDiv">
           <div id="modalFooter">
