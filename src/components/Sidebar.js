@@ -36,10 +36,8 @@ function Sidebar() {
         <Container>
           <Navbar.Brand>Popular Anime</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto navList">
-            {popularAnime}
-          </Nav>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto navList">{popularAnime}</Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

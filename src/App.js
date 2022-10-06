@@ -8,7 +8,6 @@ function App() {
   const [animeList, setAnimeList] = useState([]);
   const [search, setSearch] = useState("");
 
-
   const handleSearch = (e) => {
     e.preventDefault();
     fetchAnime(search);
@@ -20,7 +19,6 @@ function App() {
     ).then((res) => res.json());
     setAnimeList(temp.data);
   };
-
 
   return (
     <div className="App">

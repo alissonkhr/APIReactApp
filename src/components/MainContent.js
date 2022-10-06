@@ -1,5 +1,6 @@
 import React from "react";
 import AnimeCard from "./AnimeCard";
+import About from "./About";
 
 function MainContent(props) {
   const animeSearched = props.animeList.map((anime) => (
@@ -8,6 +9,9 @@ function MainContent(props) {
 
   return (
     <main>
+      <div>
+        <About />
+      </div>
       <div id="searchDiv">
         <form onSubmit={props.handleSearch}>
           <input
