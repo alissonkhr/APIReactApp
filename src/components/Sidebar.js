@@ -1,5 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 function Sidebar() {
   const [topAnime, setTopAnime] = useState([]);
@@ -21,23 +24,23 @@ function Sidebar() {
       target="_blank"
       key={anime.mal_id}
       rel="noopener noreferrer"
-      className="btn btn-light nav-link"
       role="button"
       id="topAnimeList"
     >
       {anime.title}
     </a>
   ));
-
   return (
-    <aside>
-      <nav className="navbar">
-        <div className="container-sm">
-          <h3>Popular Anime</h3>
-          {popularAnime}
-        </div>
-      </nav>
-    </aside>
+    <>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand>Popular Anime</Navbar.Brand>
+          <Nav className="me-auto">
+            {popularAnime}
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 

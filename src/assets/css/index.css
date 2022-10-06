@@ -1,5 +1,5 @@
 body {
-  background-color: lightgrey;
+  background-color: grey;
 }
 
 #title {
@@ -9,7 +9,14 @@ body {
 
 #topAnimeList {
   width: fit-content;
+  padding: 10px;
 }
+
+#topAnimeList:hover {
+  color: lightblue;
+}
+
+
 
 #body {
   margin-top: 20px;
@@ -57,3 +64,4 @@ ul {
 .modalFooterDetails {
   padding: 10px;
 }
+
