@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-function Sidebar() {
+function Navi() {
   const [topAnime, setTopAnime] = useState([]);
 
   const getTopAnime = async () => {
@@ -45,4 +45,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default Navi;

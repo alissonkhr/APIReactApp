@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+import Navi from "./components/Navi";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 
@@ -27,7 +27,7 @@ function App() {
         <Header />
         <div id="body">
           <div className="content-wrap" id="sidebar">
-            <Sidebar />
+            <Navi />
           </div>
           <div id="main">
             <MainContent
