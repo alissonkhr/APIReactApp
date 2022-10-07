@@ -1,6 +1,7 @@
 import React from "react";
 import AnimeCard from "./AnimeCard";
 import About from "./About";
+import Button from "react-bootstrap/Button";
 
 function MainContent(props) {
   const animeSearched = props.animeList.map((anime) => (
@@ -23,7 +24,13 @@ function MainContent(props) {
             className="form-control"
             id="searchInput"
           />
-            <input className="btn btn-outline-dark submitBtn" type="submit" value="Go!" />
+            <Button
+                variant="outline-dark"
+                type="submit"
+                className="submitBtn"
+              >
+              <i className="bi bi-search-heart"></i>
+              </Button>
         </form>
       </div>
       <div id="animeListDiv">{animeSearched}</div>

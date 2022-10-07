@@ -39,15 +39,15 @@ function About() {
             <span className="mal">My Anime List</span> for this site ᵔᴥᵔ
           </small>
           <Button className="aboutCloseBtn" variant="outline-dark" onClick={() => setShow(false)}>
-          <i class="bi bi-x-circle-fill"></i>
+          <i className="bi bi-check-circle-fill"></i>
           </Button>
         </div>
       </Alert>
 
       {!show && (
         <div className="d-flex justify-content-center aboutBtnDiv">
-          <Button className="aboutBtn text-dark" variant="secondary" onClick={() => setShow(true)}>
-            About AnimAPI!
+          <Button className="aboutBtn" variant="outline-dark" onClick={() => setShow(true)}>
+<i className="bi bi-envelope-paper-heart"></i>
           </Button>
         </div>
       )}

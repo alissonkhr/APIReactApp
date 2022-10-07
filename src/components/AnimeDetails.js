@@ -27,7 +27,7 @@ function AnimeDetails({ anime }) {
           className="btn btn-outline-dark"
           onClick={handleShow}
         >
-          {anime.title}
+              <i className="bi bi-hand-index-thumb"></i>
         </Button>
       </div>
       <Modal className="modal" show={show} onHide={handleClose}>
@@ -42,7 +42,7 @@ function AnimeDetails({ anime }) {
               className="synopsisButtons"
               onClick={handleMore}
             >
-              More?
+              <i className="bi bi-arrow-down-circle-fill"></i>
             </Button>
             {!button && (
               <Button
@@ -50,7 +50,7 @@ function AnimeDetails({ anime }) {
                 className="synopsisButtons"
                 onClick={handleLess}
               >
-                Less
+              <i className="bi bi-arrow-up-circle-fill"></i>
               </Button>
             )}
           </div>
@@ -62,7 +62,8 @@ function AnimeDetails({ anime }) {
             <p className="modalFooterDetails">{anime.rating}</p>
             <p className="modalFooterDetails">
               <a href={anime.url} target="_blank" className="modalLink" rel="noopener noreferrer">
-              <i className="bi bi-box-arrow-down-right"></i>
+              <i className="bi bi-patch-question-fill
+"></i>
               </a>
             </p>
           </div>
