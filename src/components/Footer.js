@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div className="footer--pin">
-      <footer className="bg-dark text-center text-white">
+      <footer className="text-center text-white">
         <div className="container">
           <section className="mb-1">
             <a
@@ -27,7 +27,7 @@ function Footer() {
           </section>
         </div>
 
-        <div className="text-center text-dark">
+        <div className="text-center text-dark p-1">
           © 2022 Copyright:
           <a
             className="sourceLink"

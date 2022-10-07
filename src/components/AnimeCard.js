@@ -21,8 +21,9 @@ function AnimeCard({ anime }) {
             />
             </a>
             <Card.Body>
-          <div>
+          <div className="animeCardBody">
             <AnimeDetails anime={anime} />
+            <span className="text-center mt-1 cardText">View More</span>
           </div>
           </Card.Body>
         </li>
