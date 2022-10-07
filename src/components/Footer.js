@@ -28,7 +28,7 @@ function Footer() {
         </div>
 
         <div className="text-center text-dark p-1">
-          © 2022 Copyright:
+          <span className="footerText">© 2022 Copyright:</span>
           <a
             className="sourceLink"
             href="https://github.com/alissonkhr/APIReactApp"

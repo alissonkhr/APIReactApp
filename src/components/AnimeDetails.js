@@ -23,11 +23,10 @@ function AnimeDetails({ anime }) {
       <div className="d-flex align-items-center justify-content-center">
         <Button
           id="animeDetailsBtn"
-          variant="secondary"
-          className="btn btn-outline-dark"
+          variant="outline-dark"
           onClick={handleShow}
         >
-              <i className="bi bi-hand-index-thumb"></i>
+              <i className="bi bi-suit-heart-fill"></i>
         </Button>
       </div>
       <Modal className="modal" show={show} onHide={handleClose}>

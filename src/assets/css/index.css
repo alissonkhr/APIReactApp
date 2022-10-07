@@ -39,28 +39,33 @@ html,
 }
 
 #aboutLink:link {
-  color: rgb(207, 91, 174);
+  color: rgb(232, 132, 204);
   text-decoration: none;
 }
 
 #aboutLink:visited {
-  color: rgb(207, 91, 174);
+  color: rgb(232, 132, 204);
   text-decoration: none;
 }
 
 #aboutLink:hover {
-  color: lightseagreen;
+  text-shadow: 1px 2px 3px #827777;
+  color: rgb(232, 132, 204);
   text-decoration: none;
 }
 
 .modalLink:link {
-  color: black;
+  color: rgb(232, 132, 204);
   text-decoration: none;
 }
 
 .modalLink:visited {
-  color: black;
+  color: rgb(232, 132, 204);
   text-decoration: none;
+}
+
+.modalLink:hover {
+  color: slategray
 }
 
 #topAnimeList:link,
@@ -79,9 +84,9 @@ html,
 
 #topAnimeList:hover,
 .animeCardATag:hover,
-.modalLink:hover,
 .sourceLink:hover {
-  color: darkgrey;
+  color: rgb(232, 132, 204);
+  text-shadow: 1px 2px 3px #827777;
   text-decoration: none;
 }
 
@@ -150,8 +155,8 @@ li {
 }
 
 .mal {
-  text-shadow: 1px 1px 2px rgb(192, 42, 122), 0 0 1em rgb(223, 26, 167),
-    0 0 0.2em rgba(119, 9, 245, 0.686);
+  text-shadow: 2px 1px 2px #ad54dd;
+  color:rgb(255, 255, 255)
 }
 
 .card {
@@ -221,9 +226,9 @@ input {
 .aboutCloseBtn,
 .synopsisButtons {
   border-color: transparent;
+  color: rgb(194, 85, 163);
 }
 
-#animeDetailsBtn,
 .submitBtn {
   width: 50px;
   background-image: url("data:image/jpeg;base64,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");
@@ -231,11 +236,55 @@ input {
   background-repeat: no-repeat;
 }
 
+.submitBtn, .aboutBtn, .footerText {
+  color: rgb(194, 85, 163);
+}
+
 .animeCardBody {
   display: flex;
   flex-direction: column;
 }
 
+.aboutCloseBtn {
+  color: rgb(232, 132, 204);
+  }
+
 .cardText {
   font-weight: bolder;
+  color:rgb(238, 225, 234);
+  text-shadow: 2px 1px 2px #ad54dd;
+}
+
+h5 {
+  color:rgb(232, 132, 204);
+  margin-top: 8px;
+  padding: 9px;
+  text-align: left;
+}
+
+h1, .alert-heading {
+  color: rgb(194, 85, 163);
+  text-shadow: 2px 1px 2px #ad54dd;
+}
+
+#animeDetailsBtn {
+  border-color: transparent;
+  color: rgb(192, 46, 160);
+  text-shadow: 1px 1px 5px #594066;
+}
+
+#animeDetailsBtn:link {
+  color: rgb(194, 85, 163)
+}
+
+#animeDetailsBtn:active {
+  color: rgb(194, 85, 163)
+}
+
+#animeDetailsBtn:hover {
+  color: rgb(194, 85, 163)
+}
+
+.aboutMsg, #smallAlertMsg {
+  color:rgb(122, 88, 114)
 }

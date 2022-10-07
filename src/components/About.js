@@ -9,7 +9,7 @@ function About() {
     <>
       <Alert show={show} variant="secondary" className="alert">
         <Alert.Heading>Welcome to AnimAPI ッ</Alert.Heading>
-        <p>
+        <p className="aboutMsg">
           Above, you will see some of the top anime out there and can click on
           the titles to get some more details about them from{" "}
           <a
